@@ -11,6 +11,7 @@ import os
 import sys
 from tempfile import gettempdir
 from subprocess import call
+import winsound
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -205,7 +206,7 @@ def train_classifier(feature_matrix_0, feature_matrix_1, algorithm='SVM'):
 
     # Train SVM using default parameters
     clf = svm.SVC()
-    clf.fit(X, y)
+    clf.fit(X, y.ravel())
     score = clf.score(X, y.ravel())
 
     # Visualize decision boundary
@@ -255,9 +256,10 @@ def beep(waveform=(79, 45, 32, 50, 99, 113, 126, 127)):
     if sys.platform.startswith("darwin"):
         return call("afplay '{fyle}'".format(fyle=wavefile), shell=True)
     if sys.platform.startswith("win"):  # FIXME: This is Ugly.
-        return call("start /low /min '{fyle}'".format(fyle=wavefile),
-                    shell=1)
-
+        frequency = 1500
+        duration = 500
+        winsound.Beep(frequency, duration)
+        return
 
 def get_feature_names(ch_names):
     """Generate the name of the features.
