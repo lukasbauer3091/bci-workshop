@@ -50,7 +50,8 @@ Other packages we will use in this workshop are:
 
 #### Individual installation of Python and packages
 
-Alternatively, you can [download Python 3.6 independently](https://www.python.org/downloads/). Make sure to install `pip` and then grab `numpy`, `matplotlib`, `scipy`, `seaborn` and ``scikit-learn`` by calling ```pip install <package_name>``` in the command line (or any other way you prefer). Make sure you have a text editor or IDE you can work with as well.
+Remember when we [downloaded and installed Python 3.6](https://www.python.org/downloads/) a while back? We are completing a similar installation process as the data-visualization workshop, but with different packages. Enter your Anaconda (Miniconda) terminal and create a virtual environment with the command ```conda create -n BCI_workshop python=3.6```. Enter the virtual environment with ```source activate BCI_workshop``` then use ```conda install``` to get `numpy`, `matplotlib`, `scipy`, `seaborn` and ``scikit-learn``. If conda install returns an error, you can use ```pip install <package_name>``` in the command line. If you do not have pip installed on your machine, you can run `conda install pip`
+
 
 #### Installation of additional Python packages
 
@@ -60,10 +61,6 @@ Run the following command in a terminal __*__ to install the remaining packages:
 pip install git+https://github.com/peplin/pygatt pylsl bitstring pexpect
 ```
 
-If you do not have pip installed on your machine, you can do so via the Anaconda prompt. Here are the instructions
-
-  1. Search on your machine for Open Anaconda prompt and open it
-  2. Put in the following command: `conda install pip`
 
 If you don't have git installed on your machine, you can download it [here](https://git-scm.com/downloads)
 
