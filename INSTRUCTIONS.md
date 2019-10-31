@@ -47,16 +47,8 @@ Other packages we will use in this workshop are:
 * [`muse-lsl`](https://github.com/alexandrebarachant/muse-lsl): a pure-Python library to connect to a Muse headband and stream data using `pylsl`,
 * [`scikit-learn`](http://scikit-learn.org/stable/): a machine learning library.
 
-To install Python 3 and some of these required packages, we suggest you download and install the [Anaconda distribution](http://continuum.io/downloads). Anaconda is a Python distribution that includes Python 3.6 (in the case of Anaconda 3), most of the packages we will need for the workshop (as well as plenty other useful packages), and [Spyder](https://pythonhosted.org/spyder/), a great IDE for scientific computing in Python.
 
-#### Installation of Python with Anaconda (recommended)
-
-1. Download the [Anaconda graphical installer](http://continuum.io/downloads) (if your OS version is 32-bit, make sure to download the 32-bit installer).
-2. Follow the instructions to install.
-
-This installs Python, Spyder and some of the packages we will need for the workshop (`numpy`, `matplotlib` and `scikit-learn`).
-
-#### Individual installation of Python and packages (optional)
+#### Individual installation of Python and packages
 
 Alternatively, you can [download Python 3.6 independently](https://www.python.org/downloads/). Make sure to install `pip` and then grab `numpy`, `matplotlib`, `scipy`, `seaborn` and ``scikit-learn`` by calling ```pip install <package_name>``` in the command line (or any other way you prefer). Make sure you have a text editor or IDE you can work with as well.
 
