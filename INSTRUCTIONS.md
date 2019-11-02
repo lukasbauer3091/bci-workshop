@@ -87,7 +87,7 @@ __*__ The way to open a terminal depends on your OS. On Windows, press <kbd>Wind
 The code for the workshop consists of Python scripts that you can find [here](https://github.com/jdpigeon/bci-workshop).
 You can download everything as a ```.zip``` file using the button ![downloadzip](fig/download_zip.jpg?raw=true "Download zip button") on the right. You then need to unzip the folder on your computer.
 
-Alternatively, if you have ```git``` installed on your computer, you can clone the repository by calling ```git clone https://github.com/jdpigeon/bci-workshop.git``` in a terminal.
+Alternatively, if you have ```git``` installed on your computer, you can clone the repository by calling ```git clone https://github.com/lukasbauer3091/bci-workshop.git``` in a terminal.
 
 ### A.3. Connecting the Muse to `muse-lsl`
 
